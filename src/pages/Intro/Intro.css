@@ -1,7 +1,7 @@
 .IntroSectionPage {
     background-image: url(../../assets/images/Intro/IntroBg.jpg);
     background-repeat: repeat;
-    padding: 12em 8em 0;
+    padding: 12em 8em 2em;
     background-position: center;
     background-size: cover;
 }
