@@ -1,0 +1,74 @@
+.ProjectsPagesection {
+    padding: 3em 8em;
+    background-color: #26096c;
+}
+
+.ProjectsPagesection h2 {
+    font-size: 40px;
+    width: 700px;
+    line-height: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.ProjectsPagesection h6 img {
+    filter: brightness(10);
+}
+git status
+
+
+.ProjectsPagesection .CustomSwiperBox {
+    box-shadow: 0 0 20px -8px #505050;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.ProjectsPagesection .CustomSwiperBox h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ProjectsPagesection .CustomSwiperBox p {
+    font-size: 13px;
+    padding: 6px 0;
+    margin-bottom: 10px;
+}
+
+.ProjectsPagesection .CustomSwiperBox span {
+    display: inline-block;
+    background: #ff6d5a;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 16px;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+
+.ProjectsPagesection .swiper-button-next, .ProjectsPagesection .swiper-button-prev {
+    right: 0;
+    background: #26096c;
+    width: 44px;
+    border-radius: 50%;
+    color: #fff;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectsPagesection .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.ProjectsPagesection .swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.ProjectsPagesection .swiper-pagination {
+    bottom: 0 !important;
+}

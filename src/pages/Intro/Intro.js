@@ -11,7 +11,7 @@ function Intro() {
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.5 });
 
     return (
-        <div className='IntroSectionPage'>
+        <div className='IntroSectionPage' id='Intro'>
             <div className='container mx-auto'>
                 <div className='grid grid-cols-12 gap-2'>
                     <div className='col-span-4'>
@@ -22,8 +22,8 @@ function Intro() {
                                 animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
                                 transition={{ duration: 1, type: "spring", stiffness: 50 }}
                             >
-                                <li className='list-disc text-[#ff6d5a] text-xl w-[90%] py-2 w-[60%] font-bold mb-10'>Frontend Developer
-                                    <span className='block text-[#7a7a7a]'>| Sr. UI Designer</span>
+                                <li className='list-disc text-[#ff6d5a] text-2xl w-[90%] py-2 w-[60%] font-bold mb-10'>Frontend Developer
+                                    <span className='block text-[#7a7a7a] text-lg'>| Sr. UI Designer</span>
                                 </li>
                             </motion.div>
                             <motion.div
@@ -68,7 +68,8 @@ function Intro() {
                             transition={{ duration: 1, type: "spring", stiffness: 50 }}
                         >
                             <img className='w-[90%] mx-auto' src={IntroPic} alt="" />
-                            <h2 className='text-center text-[#cecedb] font-bold text-3xl mt-[-20px]'>SUMIT SINGH RAWAT</h2>
+                            <p className='text-center text-[#ffffff] font-extrabold text-5xl mt-[-20px]'>
+                                SUMIT SINGH <br /> RAWAT</p>
                         </motion.div>
                     </div>
 
@@ -80,8 +81,8 @@ function Intro() {
                                 animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
                                 transition={{ duration: 1, type: "spring", stiffness: 50 }}
                             >
-                                <li className='text-[#ffffff] text-2xl w-full py-2 font-bold mb-10'>100%
-                                    <span className='block text-[#7a7a7a] text-[18px]'>Client Satisfaction</span>
+                                <li className='text-[#ffffff] text-4xl w-full py-2 font-bold mb-10'>100%
+                                    <span className='block text-[#979797] text-[18px]'>Client Satisfaction</span>
                                 </li>
                             </motion.div>
                             <motion.div
@@ -90,8 +91,8 @@ function Intro() {
                                 animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
                                 transition={{ duration: 1, type: "spring", stiffness: 50 }}
                             >
-                                <li className='text-[#ffffff] text-2xl w-full py-2 font-bold mb-10'>60+
-                                    <span className='block text-[#7a7a7a] text-[18px]'>Project Done</span>
+                                <li className='text-[#ffffff] text-4xl w-full py-2 font-bold mb-10'>60+
+                                    <span className='block text-[#979797] text-[18px]'>Project Done</span>
                                 </li>
                             </motion.div>
                             <motion.div
@@ -100,8 +101,8 @@ function Intro() {
                                 animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
                                 transition={{ duration: 1, type: "spring", stiffness: 50 }}
                             >
-                                <li className='text-[#ffffff] text-2xl w-full py-2 font-bold'>7+
-                                    <span className='block text-[#7a7a7a] text-[18px]'>Years Experience</span>
+                                <li className='text-[#ffffff] text-4xl w-full py-2 font-bold'>7+
+                                    <span className='block text-[#979797] text-[18px]'>Years Experience</span>
                                 </li>
                             </motion.div>
                         </ul>

@@ -1,0 +1,27 @@
+.GetinTouchPagesection {
+    position: relative;
+    padding: 4em 8em;
+    z-index: 1;
+}
+
+.GetinTouchPagesection .GetinTouchbgImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.LinkedInimg {
+    transform: translateY(0);
+    transition-duration: 0.3s;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
