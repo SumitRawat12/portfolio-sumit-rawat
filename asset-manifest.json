@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio-sumit-rawat/static/css/main.822f2d88.css",
-    "main.js": "/portfolio-sumit-rawat/static/js/main.fcd0bfa3.js",
+    "main.css": "/portfolio-sumit-rawat/static/css/main.9c53f1fb.css",
+    "main.js": "/portfolio-sumit-rawat/static/js/main.067bbf15.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio-sumit-rawat/static/js/488.9561f9b8.chunk.js",
     "static/media/Skills.png": "/portfolio-sumit-rawat/static/media/Skills.3bb6c32608f3f0922f7b.png",
     "static/media/bg.jpg": "/portfolio-sumit-rawat/static/media/bg.47920eba4a9992fb67cf.jpg",
     "static/media/IntroPic.png": "/portfolio-sumit-rawat/static/media/IntroPic.f1dca3c727fa5d199b8b.png",
+    "static/media/SV.jpg": "/portfolio-sumit-rawat/static/media/SV.918e4619e270e6a6dfa3.jpg",
     "static/media/IntroBg.jpg": "/portfolio-sumit-rawat/static/media/IntroBg.78f61b563d91333e4990.jpg",
     "static/media/MW.jpg": "/portfolio-sumit-rawat/static/media/MW.d036ff3edd6d2adf1b13.jpg",
     "static/media/img5.png": "/portfolio-sumit-rawat/static/media/img5.7250a1c7ce7508d63445.png",
@@ -18,12 +19,12 @@
     "static/media/Poppins-Regular.ttf": "/portfolio-sumit-rawat/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Jost-VariableFont_wght.ttf": "/portfolio-sumit-rawat/static/media/Jost-VariableFont_wght.34835cd554b7b71732e2.ttf",
     "index.html": "/portfolio-sumit-rawat/index.html",
-    "main.822f2d88.css.map": "/portfolio-sumit-rawat/static/css/main.822f2d88.css.map",
-    "main.fcd0bfa3.js.map": "/portfolio-sumit-rawat/static/js/main.fcd0bfa3.js.map",
+    "main.9c53f1fb.css.map": "/portfolio-sumit-rawat/static/css/main.9c53f1fb.css.map",
+    "main.067bbf15.js.map": "/portfolio-sumit-rawat/static/js/main.067bbf15.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio-sumit-rawat/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.822f2d88.css",
-    "static/js/main.fcd0bfa3.js"
+    "static/css/main.9c53f1fb.css",
+    "static/js/main.067bbf15.js"
   ]
 }
