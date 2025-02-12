@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-sumit-rawat/static/css/main.04968793.css",
-    "main.js": "/portfolio-sumit-rawat/static/js/main.fc833730.js",
+    "main.css": "/portfolio-sumit-rawat/static/css/main.d2d9c659.css",
+    "main.js": "/portfolio-sumit-rawat/static/js/main.4d971d75.js",
     "static/js/488.1446b851.chunk.js": "/portfolio-sumit-rawat/static/js/488.1446b851.chunk.js",
     "static/media/Skills.png": "/portfolio-sumit-rawat/static/media/Skills.3bb6c32608f3f0922f7b.png",
     "static/media/bg.jpg": "/portfolio-sumit-rawat/static/media/bg.47920eba4a9992fb67cf.jpg",
@@ -42,12 +42,12 @@
     "static/media/SATS.jpg": "/portfolio-sumit-rawat/static/media/SATS.2f2c620a5d7b6460a481.jpg",
     "static/media/IKIO.jpg": "/portfolio-sumit-rawat/static/media/IKIO.8bc0ac88743b93e74675.jpg",
     "index.html": "/portfolio-sumit-rawat/index.html",
-    "main.04968793.css.map": "/portfolio-sumit-rawat/static/css/main.04968793.css.map",
-    "main.fc833730.js.map": "/portfolio-sumit-rawat/static/js/main.fc833730.js.map",
+    "main.d2d9c659.css.map": "/portfolio-sumit-rawat/static/css/main.d2d9c659.css.map",
+    "main.4d971d75.js.map": "/portfolio-sumit-rawat/static/js/main.4d971d75.js.map",
     "488.1446b851.chunk.js.map": "/portfolio-sumit-rawat/static/js/488.1446b851.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04968793.css",
-    "static/js/main.fc833730.js"
+    "static/css/main.d2d9c659.css",
+    "static/js/main.4d971d75.js"
   ]
 }
