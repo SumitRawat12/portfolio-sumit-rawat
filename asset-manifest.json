@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-sumit-rawat/static/css/main.0cd4610e.css",
-    "main.js": "/portfolio-sumit-rawat/static/js/main.234c3dfc.js",
+    "main.js": "/portfolio-sumit-rawat/static/js/main.b4c9a367.js",
     "static/js/488.1446b851.chunk.js": "/portfolio-sumit-rawat/static/js/488.1446b851.chunk.js",
     "static/media/Skills.png": "/portfolio-sumit-rawat/static/media/Skills.3bb6c32608f3f0922f7b.png",
     "static/media/bg.jpg": "/portfolio-sumit-rawat/static/media/bg.47920eba4a9992fb67cf.jpg",
@@ -49,11 +49,11 @@
     "static/media/maintenance.png": "/portfolio-sumit-rawat/static/media/maintenance.82f0eaa6548df36e21d3.png",
     "index.html": "/portfolio-sumit-rawat/index.html",
     "main.0cd4610e.css.map": "/portfolio-sumit-rawat/static/css/main.0cd4610e.css.map",
-    "main.234c3dfc.js.map": "/portfolio-sumit-rawat/static/js/main.234c3dfc.js.map",
+    "main.b4c9a367.js.map": "/portfolio-sumit-rawat/static/js/main.b4c9a367.js.map",
     "488.1446b851.chunk.js.map": "/portfolio-sumit-rawat/static/js/488.1446b851.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cd4610e.css",
-    "static/js/main.234c3dfc.js"
+    "static/js/main.b4c9a367.js"
   ]
 }
