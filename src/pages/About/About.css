@@ -1,0 +1,16 @@
+.AboutSectionPage {
+    padding: 2em 8em;
+}
+
+.AboutSectionPage h2 {
+    font-size: 40px;
+    padding-right: 170px;
+    line-height: 50px;
+    font-weight: 800;
+    color: #12103e;
+}
+
+.AboutTabs .react-tabs__tab--selected {
+    color: #ff6d5a !important;
+    font-weight: bold;
+}

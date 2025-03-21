@@ -1,0 +1,81 @@
+.AchievementPagesection {
+    position: relative;
+    padding: 3em 8em;
+    z-index: 1;
+}
+
+.AchievementPagesection .AchievementbgImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.AchievementPagesection h2 {
+    font-size: 40px;
+    width: 700px;
+    line-height: 50px;
+    font-weight: 800;
+    color: #12103e;
+}
+
+.AchievementPagesection .AchievementBox {
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    padding: 0;
+    position: relative;
+    box-shadow: 0px 0px 20px 1px #ddd;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 0px 20px 1px #c7c7c7;
+    }
+}
+
+.AchievementPagesection .AchievementBox .circleshape {
+    position: absolute;
+    top: -30px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 1px #ddd;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    left: 30px;
+}
+
+.AchievementPagesection .AchievementBox .circleshape img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.AchievementPagesection .AchievementBox h6 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #5E5E5E;
+    padding: 50px 30px 10px 30px;
+}
+
+.AchievementPagesection .AchievementBox h4 {
+    color: #342EAD;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 30px 0 30px;
+}
+
+.AchievementPagesection .AchievementBox p {
+    color: #5a5a5a;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 30px 30px 30px;
+}

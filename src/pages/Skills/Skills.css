@@ -1,0 +1,11 @@
+.SkillsPageSection {
+    padding: 3em 8em;
+}
+
+.SkillsPageSection h2 {
+    font-size: 40px;
+    width: 800px;
+    line-height: 50px;
+    font-weight: 800;
+    color: #12103e;
+}

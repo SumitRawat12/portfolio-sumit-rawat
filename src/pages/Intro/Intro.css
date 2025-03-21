@@ -1,0 +1,17 @@
+.IntroSectionPage {
+    background-image: url(../../assets/images/Intro/IntroBg.jpg);
+    background-repeat: repeat;
+    padding: 12em 8em 2em;
+    background-position: center;
+    background-size: cover;
+}
+
+.IntroSectionPage ul li {
+    background: linear-gradient(237deg, #110d59, #09072d);
+    border-radius: 0 40px 40px 0;
+}
+
+.IntroSectionPage ul li:last-child {
+    background: none;
+    border-radius: 0;
+}

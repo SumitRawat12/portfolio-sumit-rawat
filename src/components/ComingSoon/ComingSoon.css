@@ -1,0 +1,23 @@
+.ComingsoonPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FDFCFB, #E2D1C3);
+    flex-direction: column;
+    text-align: center;
+}
+
+.ComingsoonPage h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.ComingsoonPage h5{
+    font-size: 24px;
+}
+
+.ComingsoonPage p{
+    font-size: 16px;
+    margin-top: 20px;
+}
