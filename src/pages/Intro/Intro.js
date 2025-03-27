@@ -1,116 +1,136 @@
-import React from 'react'
-import './Intro.css'
-import IntroPic from '../../assets/images/Intro/IntroPic.png'
+import React, { useState, useEffect } from "react";
+import "./Intro.css";
+import { Link as ScrollLink } from "react-scroll";
+
+import IntroPic from "../../assets/images/Intro/IntroPic.png";
+import UIText from "../../assets/images/Intro/UIText.png";
+
+import gmailiIcon from "../../assets/images/Intro/gmail.png";
+import linkedinIcon from "../../assets/images/Intro/linkedin.png";
+import behanceIcon from "../../assets/images/Intro/behance.png";
+import dribbleIcon from "../../assets/images/Intro/dribble.png";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function Intro() {
+  // ANIMATION
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
-    // ANIMATION
-    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true, threshold: 0.5 });
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <div className='IntroSectionPage' id='Intro'>
-            <div className='container mx-auto'>
-                <div className='grid grid-cols-12 gap-2'>
-                    <div className='col-span-4'>
-                        <ul>
-                            <motion.div
-                                ref={ref1}
-                                initial={{ opacity: 0, x: -100 }}
-                                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
-                                transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                            >
-                                <li className='list-disc text-[#ff6d5a] text-2xl w-[90%] py-2 w-[60%] font-bold mb-10'>Frontend Developer
-                                    <span className='block text-[#7a7a7a] text-lg'>| Sr. UI Designer</span>
-                                </li>
-                            </motion.div>
-                            <motion.div
-                                ref={ref1}
-                                initial={{ opacity: 0, x: -100 }}
-                                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
-                                transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                            >
-                                <li className='list-disc text-[#7a7a7a] text-lg w-[90%] py-2 w-[60%] font-bold mb-20'>Say hello to
-                                    <span className='block text-[#ffffff] text-[18px]'>ssr192031@gmail.com</span>
-                                </li>
-                            </motion.div>
-                            <motion.div
-                                ref={ref1}
-                                initial={{ opacity: 0, x: -100 }}
-                                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
-                                transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                            >
-                                <li className='flex gap-6 text-xl'>
-                                    <a href="" className='transition-all duration-300 text-[#4a44ad] hover:text-[#ff6d5a]'>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="" className='transition-all duration-300 text-[#4a44ad] hover:text-[#ff6d5a]'>
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="" className='transition-all duration-300 text-[#4a44ad] hover:text-[#ff6d5a]'>
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/sumit-singh-rawat-b21593243/" target='_blank' className='transition-all duration-300 text-[#4a44ad] hover:text-[#ff6d5a]'>
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                            </motion.div>
-                        </ul>
-                    </div>
+  const titles = ["UI/UX Designer", "Frontend Developer", "Web Designer" ];
 
-                    <div className='col-span-4 flex align-center justify-center'>
-                        <motion.div
-                            ref={ref1}
-                            initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 100 }}
-                            transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                        >
-                            <img className='w-[90%] mx-auto' src={IntroPic} alt="" />
-                            <p className='text-center text-[#ffffff] font-extrabold text-5xl mt-[-20px]'>
-                                SUMIT SINGH <br /> RAWAT</p>
-                        </motion.div>
-                    </div>
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const speed = isDeleting ? 50 : 100;
 
-                    <div className='col-span-4 text-right'>
-                        <ul>
-                            <motion.div
-                                ref={ref1}
-                                initial={{ opacity: 0, x: 100 }}
-                                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
-                                transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                            >
-                                <li className='text-[#ffffff] text-4xl w-full py-2 font-bold mb-10'>100%
-                                    <span className='block text-[#979797] text-[18px]'>Client Satisfaction</span>
-                                </li>
-                            </motion.div>
-                            <motion.div
-                                ref={ref1}
-                                initial={{ opacity: 0, x: 100 }}
-                                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
-                                transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                            >
-                                <li className='text-[#ffffff] text-4xl w-full py-2 font-bold mb-10'>60+
-                                    <span className='block text-[#979797] text-[18px]'>Project Done</span>
-                                </li>
-                            </motion.div>
-                            <motion.div
-                                ref={ref1}
-                                initial={{ opacity: 0, x: 100 }}
-                                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
-                                transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                            >
-                                <li className='text-[#ffffff] text-4xl w-full py-2 font-bold'>7+
-                                    <span className='block text-[#979797] text-[18px]'>Years Experience</span>
-                                </li>
-                            </motion.div>
-                        </ul>
-                    </div>
-                </div>
+  useEffect(() => {
+    const currentWord = titles[index];
+    let timeout;
+
+    if (!isDeleting && text === currentWord) {
+      timeout = setTimeout(() => setIsDeleting(true), 2000);
+    } else if (isDeleting && text === "") {
+      setIsDeleting(false);
+      setIndex((prev) => (prev + 1) % titles.length);
+    } else {
+      timeout = setTimeout(() => {
+        setText((prev) =>
+          isDeleting ? prev.slice(0, -1) : currentWord.slice(0, prev.length + 1)
+        );
+      }, speed);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, index]);
+
+  return (
+    <section className="IntroSectionPage" id="Intro">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-12 gap-2">
+          <div className="col-span-8 text-left">
+            <div className="IntroLeftAside">
+              <motion.div
+                ref={ref1}
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : -100 }}
+                transition={{ duration: 1, type: "spring", stiffness: 50 }}
+              >
+                <h6>I AM</h6>
+                <h2>Sumit Singh Rawat, a </h2>
+                <h3>
+                  {text}
+                  <span className="blinking-cursor">|</span>
+                </h3>
+                <p>
+                  I take <b>raw ideas</b> and turn them into{" "}
+                  <b>smooth, user-friendly digital experiences</b> that people{" "}
+                  <b>love to use</b>.
+                </p>
+
+                <a href="/Sumit_Rawat_Senior_UIUX_Resume.pdf" download>
+                  <button className="bg-blue-500 text-white px-4 py-2 rounded">
+                    Download Resume
+                  </button> 
+                </a>
+                <ScrollLink
+                  to="Projects"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  className="cursor-pointer text-xl font-semibold text-blue-500 hover:text-blue-700"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <button className="ViewMyWorkBtn">View my work</button>
+                </ScrollLink>
+
+                <h5>Find me on</h5>
+                <a href="mailto:ssr192031@gmail.com">
+                  <img src={gmailiIcon} alt="gmailiIcon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/sumit-singh-rawat-b21593243/"
+                >
+                  <img src={linkedinIcon} alt="linkedinIcon" />
+                </a>
+                <a target="_blank" href="https://www.behance.net/sumitrawat53">
+                  <img src={behanceIcon} alt="behanceIcon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://dribbble.com/UIuxdesigner-Sumit"
+                >
+                  <img src={dribbleIcon} alt="dribbleIcon" />
+                </a>
+              </motion.div>
             </div>
+          </div>
+
+          <div className="col-span-4 text-right">
+            <ul className="IntroRightAside">
+              <li>
+                <motion.div
+                  ref={ref1}
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : 100 }}
+                  transition={{ duration: 1, type: "spring", stiffness: 50 }}
+                >
+                  <img src={IntroPic} alt="IntroPic" />
+                  <img className="bounce" src={UIText} alt="UIText" />
+                </motion.div>
+              </li>
+            </ul>
+          </div>
         </div>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Intro
+export default Intro;

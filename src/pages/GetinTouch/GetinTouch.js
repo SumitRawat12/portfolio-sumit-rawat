@@ -1,91 +1,80 @@
-import React from 'react'
-import './GetinTouch.css';
+import React from "react";
+import "./GetinTouch.css";
 
-import Achievementbg from '../../assets/images/Achievement/bg.jpg'
-import Img5 from '../../assets/images/GetinTouch/img5.png'
-import mailImg from '../../assets/images/GetinTouch/img1.png'
-import callImg from '../../assets/images/GetinTouch/img2.png'
-import addImg from '../../assets/images/GetinTouch/img3.png'
-import linkdinImg from '../../assets/images/GetinTouch/img4.png'
+import CVImg from "../../assets/images/GetinTouch/CVImg.png";
+import MailIcon from "../../assets/images/GetinTouch/MailIcon.png";
+import BehanceIcon from "../../assets/images/GetinTouch/BehanceIcon.png";
+import LinkedinIcon from "../../assets/images/GetinTouch/LinkedinIcon.png";
+import DribbbleIcon from "../../assets/images/GetinTouch/DribbbleIcon.png";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function GetinTouch() {
+  // ANIMATION
+  const { ref: ref6, inView: inView6 } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
 
-    // ANIMATION
-    const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true, threshold: 0.3 });
-
-    return (
-        <section className='GetinTouchPagesection' id='Contact'>
-            <div className='GetinTouchbgImg' style={{ backgroundImage: `url('${Achievementbg}')` }}></div>
-            <div className='container mx-auto'>
-                <div className='flex flex-row justify-between items-center'>
-                    <div>
-                        <motion.div
-                            ref={ref6}
-                            initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
-                            transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                        >
-                            <h2 className='text-3xl font-semibold mb-6'>Get in Touch</h2>
-                        </motion.div>
-                        <motion.div
-                            ref={ref6}
-                            initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
-                            transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                        >
-                            <ul className='flex gap-4 mb-5'>
-                                <li className='flex items-center font-semibold text-[#343434] text-sm'><img className='w-[14%] mr-2' src={mailImg} alt="" />  ssr192031@gmail.com</li>
-                                <li className='flex items-center font-semibold text-[#343434] text-sm'><img className='w-[9%] mr-2' src={callImg} alt="" />  +91 7530889280, +91 8700055129</li>
-                            </ul>
-                        </motion.div>
-                        <motion.div
-                            ref={ref6}
-                            initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
-                            transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                        >
-                            <ul className='mb-10'>
-                                <li className='flex items-center font-semibold text-[#343434] text-sm'><img className='w-[5%] mr-2' src={addImg} alt="" />  Dwarka Sector-19, New Delhi - 110071</li>
-                            </ul>
-                        </motion.div>
-
-                        <motion.div
-                            ref={ref6}
-                            initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
-                            transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                        >
-                            <h3 className='text-xl font-semibold mb-4'>LinkedIn Profile</h3>
-                        </motion.div>
-                        <motion.div
-                            ref={ref6}
-                            initial={{ opacity: 0, y: 100 }}
-                            animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
-                            transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                        >
-                            <ul>
-                                <li className='flex items-center font-semibold text-[#343434] text-sm'>
-                                    <a className='w-[6%] LinkedInimg' href="https://www.linkedin.com/in/sumit-singh-rawat-b21593243/" target='_blank'><img className='w-full mr-2' src={linkdinImg} alt="" /></a>
-                                </li>
-                            </ul>
-                        </motion.div>
-                    </div>
-                    <motion.div
-                        className='w-[36%]'
-                        ref={ref6}
-                        initial={{ opacity: 0, x: 100 }}
-                        animate={{ opacity: inView6 ? 1 : 0, x: inView6 ? 0 : 100 }}
-                        transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                    >
-                        <img src={Img5} className='w-full' alt="" />
-                    </motion.div>
+  return (
+    <section className="GetinTouchPagesection" id="Contact">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-12 gap-20">
+          <div className="col-span-7">
+            <motion.div
+              ref={ref6}
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
+              transition={{ duration: 1, type: "spring", stiffness: 50 }}
+            >
+              <h6 className="flex items-center uppercase font-bold text-[#4C7CF4] text-[22px] mt-14">
+                CONTACT US
+              </h6>
+              <h2 className="py-2 text-3xl font-semibold mb-6">
+                Looking for a designer? Let’s create impactful experiences!
+              </h2>
+            </motion.div>
+            <motion.div
+              ref={ref6}
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 100 }}
+              transition={{ duration: 1, type: "spring", stiffness: 50 }}
+            >
+              <div className="grid grid-cols-12 gap-y-6">
+                <div className="col-span-6 flex items-center text-[18px] text-white">
+                  <img src={MailIcon} className="w-[40px] mr-4" alt="" />{" "}
+                  ssr192031@gmail.com
                 </div>
-            </div>
-        </section>
-    )
+                <div className="col-span-6 flex items-center text-[18px] text-white">
+                  <img src={BehanceIcon} className="w-[40px] mr-4" alt="" />{" "}
+                  Behance
+                </div>
+                <div className="col-span-6 flex items-center text-[18px] text-white">
+                  <img src={LinkedinIcon} className="w-[40px] mr-4" alt="" />{" "}
+                  LinkedIn
+                </div>
+                <div className="col-span-6 flex items-center text-[18px] text-white">
+                  <img src={DribbbleIcon} className="w-[40px] mr-4" alt="" />{" "}
+                  Dribbble
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <div className="col-span-5 text-right">
+            <motion.div
+              ref={ref6}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: inView6 ? 1 : 0, x: inView6 ? 0 : 100 }}
+              transition={{ duration: 1, type: "spring", stiffness: 50 }}
+            >
+              <img src={CVImg} className="w-full bounce" alt="" />
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default GetinTouch
+export default GetinTouch;

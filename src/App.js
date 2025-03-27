@@ -12,15 +12,15 @@ import Comingsoon from "./components/ComingSoon/ComingSoon";
 function App() {
   return (
     <>
-      <Comingsoon />
-      {/* <Header />
+      {/* <Comingsoon /> */}
+      <Header />
       <Intro />
       <About />
-      <Achievement />
-      <Skills />
       <Projects />
+      <Skills />
+      <Achievement />
       <GetinTouch />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

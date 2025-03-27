@@ -21,7 +21,7 @@ function Footer() {
                         animate={{ opacity: inView7 ? 1 : 0, y: inView7 ? 0 : -100 }}
                         transition={{ duration: 1, type: "spring", stiffness: 50 }}
                     >
-                        <p className='text-[#000] text-sm font-semibold'>© 2025 Sumit Singh Rawat. All Rights Reserved.</p>
+                        <p>© 2025 Sumit Singh Rawat. All Rights Reserved.</p>
                     </motion.div>
                 </div>
             </div>

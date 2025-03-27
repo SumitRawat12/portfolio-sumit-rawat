@@ -1,3 +1,68 @@
 .HeaderSection {
-    padding: 10px 8em;
+    padding: 20px 8em;
+    background-color: #08202F;
+}
+
+.HeaderSection .FixedSidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 25%;
+    background-color: #031724;
+    padding: 30px;
+}
+
+.HeaderSection .FixedSidebar .Sidebarheader{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #323d58;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.HeaderSection .FixedSidebar .Sidebarheader i{
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.HeaderSection .FixedSidebar .Sidebarheader img{
+    width: 50px;
+}
+
+.HeaderSection .FixedSidebar .Sidebarheader h4{
+    color: #eee;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.HeaderSection .FixedSidebar .Sidebarheader h4 span{
+    display: block;
+    font-size: 16px;
+    color: #4C7CF4;
+}
+
+.HeaderSection .FixedSidebar ul{
+    padding-left: 20px;
+}
+
+.HeaderSection .FixedSidebar ul li{
+    list-style: disc;
+    color: #fff;
+    padding: 8px 0;
+}
+
+.HeaderSection .FixedSidebar ul li a{
+    color: #e3e3e3;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.HeaderSection .FixedSidebar ul li a:hover{
+    color: #4C7CF4;
 }

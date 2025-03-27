@@ -1,74 +1,124 @@
 .ProjectsPagesection {
-    padding: 3em 8em;
-    background-color: #26096c;
+  padding: 3em 8em;
 }
 
 .ProjectsPagesection h2 {
-    font-size: 40px;
-    width: 700px;
-    line-height: 50px;
-    font-weight: 800;
-    color: #fff;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 800;
+  color: #eeeeee;
+  text-align: center;
 }
 
-.ProjectsPagesection h6 img {
-    filter: brightness(10);
+.ProjectsPagesection .MuiButtonBase-root.Mui-selected{
+  background-color: #4c7cf4;
+  color: #eeeeee !important;
 }
-git status
 
+.ProjectsPagesection .MuiButtonBase-root {
+  font-weight: 500 !important;
+  color: #DDDDDD !important;
+  font-size: 14px !important;
+  padding: 10px 30px !important;
+  width: auto;
+  min-height: auto !important;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #4C7CF4 !important;
+}
+
+.ProjectsPagesection .MuiButtonBase-root:first-child{
+  border-radius: 10px 0 0 10px;
+}
+
+.ProjectsPagesection .MuiButtonBase-root:last-child{
+  border-radius: 0 10px 10px 0;
+}
+
+.ProjectsPagesection .MuiButtonBase-root:hover{
+  background-color: #062b41;
+}
+
+.ProjectsPagesection .MuiTabs-indicator {
+  display: none;
+}
 
 .ProjectsPagesection .CustomSwiperBox {
-    box-shadow: 0 0 20px -8px #505050;
-    padding: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+  background: #202832;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
-.ProjectsPagesection .CustomSwiperBox h3 {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.ProjectsPagesection .CustomSwiperBox p {
-    font-size: 13px;
-    padding: 6px 0;
-    margin-bottom: 10px;
+.ProjectsPagesection .CustomSwiperBox h4 {
+  color: #eeeeee;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .ProjectsPagesection .CustomSwiperBox span {
-    display: inline-block;
-    background: #ff6d5a;
-    color: #fff;
-    font-size: 12px;
-    padding: 4px 10px;
-    border-radius: 16px;
-    letter-spacing: 0.8px;
-    margin-bottom: 10px;
+  color: #939393;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid #939393;
+  padding: 8px 20px;
+  border-radius: 50px;
 }
 
-.ProjectsPagesection .swiper-button-next, .ProjectsPagesection .swiper-button-prev {
-    right: 0;
-    background: #26096c;
-    width: 44px;
-    border-radius: 50%;
-    color: #fff;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ProjectsPagesection .CustomSwiperBox ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
-.ProjectsPagesection .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    font-size: 20px;
-    font-weight: 800;
+.ProjectsPagesection .CustomSwiperBox ul li{
+    color: #939393;
 }
 
-.ProjectsPagesection .swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
-    font-size: 20px;
-    font-weight: 800;
+.ProjectsPagesection .CustomSwiperBox ul li img{
+    width: 23px;
+    margin-right: 10px;
+}
+
+.ProjectsPagesection .swiper-button-next {
+  right: 0px;
+  background: #eeeeee;
+  width: 44px;
+  border-radius: 50%;
+  color: #000000;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectsPagesection .swiper-button-prev {
+  left: 0;
+  background: #eeeeee;
+  width: 44px;
+  border-radius: 50%;
+  color: #000000;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectsPagesection .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ProjectsPagesection .swiper-button-prev:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .ProjectsPagesection .swiper-pagination {
-    bottom: 0 !important;
+  bottom: 0 !important;
 }

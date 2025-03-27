@@ -3,25 +3,276 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Jost';
-    src: url('../src/assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Jost";
+  src: url("../src/assets/fonts/Jost-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../src/assets/fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Poppins";
+  src: url("../src/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
-    scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+  background-color: #08202f;
+  scroll-behavior: smooth;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.flip {
+  animation: flip 4s infinite;
+}
+
+.blinking-cursor {
+  font-weight: bold;
+  font-size: 1.2em;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 600px) {
+  section, footer {
+    padding: 1em !important;
+  }
+
+  h6 {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+    padding: 0 !important;
+    line-height: normal !important;
+  }
+
+  p {
+    font-size: 12px !important;
+    padding: 10px 0 !important;
+    line-height: 20px !important;
+  }
+
+  .HeaderSection {
+    padding: 20px 1em !important;
+  }
+
+  .HeaderSection .FixedSidebar{
+    width: 98% !important;
+  }
+
+  .HeaderSection h4{
+    font-size: 14px !important;
+  }
+
+  /* INTRO SECTION CSS */
+
+  .IntroSectionPage {
+    padding-top: 5em !important;
+  }
+
+  .IntroSectionPage .gap-2 {
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  .IntroSectionPage .IntroLeftAside {
+    padding-right: 0 !important;
+  }
+  .IntroSectionPage .IntroLeftAside h3 {
+    font-size: 22px !important;
+    margin-top: 6px !important;
+  }
+  .IntroSectionPage .IntroLeftAside button {
+    font-size: 15px !important;
+    padding: 8px 15px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .IntroSectionPage .IntroRightAside {
+    width: 70% !important;
+    margin: 20px auto !important;
+  }
+
+  /* ABOUT US SECTION */
+
+  .AboutSectionPage .grid {
+    display: block !important;
+  }
+
+  .AboutSectionPage .AboutExpertiseBox {
+    margin-bottom: 10px !important;
+  }
+
+  .AboutSectionPage .AboutExpertiseBox:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .AboutSectionPage img.w-full {
+    margin-bottom: 30px !important;
+  }
+
+  .ProjectsPagesection .MuiTabs-flexContainer {
+    display: block !important;
+  }
+
+  .ProjectsPagesection .MuiButtonBase-root {
+    display: block !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ProjectsPagesection .CustomSwiperBox h4 {
+    font-size: 16px !important;
+  }
+
+  .ProjectsPagesection .CustomSwiperBox div {
+    display: block !important;
+  }
+
+  .ProjectsPagesection .CustomSwiperBox ul {
+    margin-top: 20px;
+    justify-content: left;
+  }
+
+  /* SKILLS SECTION */
+
+  .SkillsPageSection .flex {
+    display: block !important;
+  }
+
+  .SkillsPageSection .flex p {
+    text-align: left !important;
+  }
+
+  .SkillsPageSection ul li {
+    display: block !important;
+    padding: 20px !important;
+  }
+
+  .SkillsPageSection ul li hr {
+    display: none !important;
+  }
+
+  .SkillsPageSection ul li h4 img {
+    width: 50px !important;
+    margin-right: 10px !important;
+  }
+
+  .SkillsPageSection ul li p {
+    text-align: left !important;
+    min-width: auto !important;
+    max-width: auto !important;
+    width: auto !important;
+  }
+
+  .SkillsPageSection ul li p span {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+
+  .SkillsPageSection ul li h4 {
+    font-size: 20px !important;
+  }
+
+  /* ACHIEVEMENT SECTION */
+  .AchievementPagesection .gap-20 {
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  .AchievementPagesection h2 {
+    margin-bottom: 20px !important;
+  }
+
+  .AchievementPagesection ul li span {
+    font-size: 14px !important;
+  }
+
+  .AchievementPagesection ul li h4 {
+    font-size: 16px !important;
+  }
+
+  .AchievementPagesection ul li h5 {
+    padding-top: 4px !important;
+    font-size: 14px !important;
+  }
+
+  .AchievementPagesection h2 img {
+    width: 30px !important;
+  }
+
+  /* GET IN TOUCH SECTION */
+  .GetinTouchPagesection .gap-20, .GetinTouchPagesection .grid {
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  .GetinTouchPagesection .col-span-5 img{
+    display: none !important;
+  }
+
+  .GetinTouchPagesection h6{
+    margin: 0 !important;
+  }
+
+  /* FOOTER SECTION */
+  .FooterPage{
+    padding: 2px 1em!important;
+    text-align: center !important;
+  }
 }

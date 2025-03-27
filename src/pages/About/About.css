@@ -1,16 +1,53 @@
 .AboutSectionPage {
-    padding: 2em 8em;
+    padding: 3em 8em;
 }
 
 .AboutSectionPage h2 {
     font-size: 40px;
-    padding-right: 170px;
-    line-height: 50px;
+    padding-right: 100px;
+    line-height: 60px;
     font-weight: 800;
-    color: #12103e;
+    color: #eee;
 }
 
 .AboutTabs .react-tabs__tab--selected {
     color: #ff6d5a !important;
     font-weight: bold;
+}
+
+.AboutSectionPage .AboutExpertiseBox{
+    background: #0E1925;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #343434;
+    padding: 20px 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.AboutSectionPage .AboutExpertiseBox:hover{
+    background: #073756;
+}
+
+.AboutSectionPage .AboutExpertiseBox img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.AboutSectionPage .AboutExpertiseBox span{
+    color: #DDDDDD;
+    font-size: 16px;
+}
+
+.AboutSectionPage h5{
+    color: #BFBFBF;
+    font-size: 16px;
+    padding: 20px 0;
+    letter-spacing: 0.5px;
+}
+
+.AboutSectionPage .figmaIcon{
+    display: inline-block;
+    width: 30px;
+    margin-right: 20px;
 }

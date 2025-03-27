@@ -1,4 +1,11 @@
 .FooterPage {
-    padding: 10px 8em;
-    background: #ff6d5a;
+    padding: 20px 8em;
+    background: #083958;
+}
+
+.FooterPage p {
+    color: #eee;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    font-size: 14px;
 }

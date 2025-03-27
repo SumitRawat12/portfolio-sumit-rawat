@@ -1,17 +1,96 @@
 .IntroSectionPage {
     background-image: url(../../assets/images/Intro/IntroBg.jpg);
-    background-repeat: repeat;
-    padding: 12em 8em 2em;
+    background-repeat: no-repeat;
+    padding: 8em 8em 1em;
     background-position: center;
-    background-size: cover;
+    background-size: 130% 100%;
 }
 
-.IntroSectionPage ul li {
-    background: linear-gradient(237deg, #110d59, #09072d);
-    border-radius: 0 40px 40px 0;
+.IntroSectionPage .IntroLeftAside{
+    padding-right: 20em;
 }
 
-.IntroSectionPage ul li:last-child {
-    background: none;
-    border-radius: 0;
+.IntroSectionPage .IntroLeftAside h6{
+    color: #4C7CF4;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.IntroSectionPage .IntroLeftAside h2{
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 44px;
+    margin-bottom: -10px;
+}
+
+.IntroSectionPage .IntroLeftAside h3{
+    color: #4C7CF4;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.IntroSectionPage .IntroLeftAside p{
+    color: #BFBFBF;
+    /* font-weight: bold; */
+    font-size: 16px;
+    padding: 20px 0;
+    letter-spacing: 0.5px;
+}
+
+.IntroSectionPage .IntroLeftAside p b{
+    color: #4C7CF4;
+}
+
+.IntroSectionPage .IntroLeftAside button{
+    background: #4C7CF4;
+    color: #eee;
+    font-size: 18px;    
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #4C7CF4;
+    transition: 0.5s ease-in-out;    
+}
+
+.IntroSectionPage .IntroLeftAside .ViewMyWorkBtn{
+    background: transparent;
+    color: #4C7CF4;
+}
+
+.IntroSectionPage .IntroLeftAside .ViewMyWorkBtn:hover{
+    background: #4C7CF4;
+    color: #eee;
+}
+
+.IntroSectionPage .IntroLeftAside button:hover{
+    background: transparent;
+    color: #4C7CF4;
+}
+
+.IntroSectionPage .IntroLeftAside h5{
+    color: #BFBFBF;
+    font-size: 16px;
+    padding: 20px 0;
+    letter-spacing: 0.5px;
+}
+
+
+.IntroSectionPage .IntroLeftAside img{
+    display: inline-block;
+    width: 30px;
+    margin-right: 20px;
+    transform: translateY(0);
+    transition-duration: 0.3s;
+}
+
+.IntroSectionPage .IntroLeftAside img:hover{
+    transform: translateY(-4px);
+}
+
+.IntroSectionPage .IntroRightAside img {
+    width: 80%;
+    margin: 0 auto;
 }
