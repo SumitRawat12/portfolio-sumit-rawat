@@ -62,7 +62,7 @@ function Intro() {
                 transition={{ duration: 1, type: "spring", stiffness: 50 }}
               >
                 <h6>I AM</h6>
-                <h2>Sumit Singh Rawat, A </h2>
+                <h2>Sumit Singh Rawat, a </h2>
                 <h3>
                   {text}
                   <span className="blinking-cursor">|</span>
