@@ -42,6 +42,19 @@
     color: #4C7CF4;
 }
 
+.IntroSectionPage .IntroLeftAside .ResumeBtn{
+    background: #4C7CF4;
+    color: #eee;
+    font-size: 18px;    
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #4C7CF4;
+    transition: 0.5s ease-in-out;    
+}
+
 .IntroSectionPage .IntroLeftAside button{
     background: #4C7CF4;
     color: #eee;
@@ -66,6 +79,11 @@
 }
 
 .IntroSectionPage .IntroLeftAside button:hover{
+    background: transparent;
+    color: #4C7CF4;
+}
+
+.IntroSectionPage .IntroLeftAside .ResumeBtn:hover{
     background: transparent;
     color: #4C7CF4;
 }

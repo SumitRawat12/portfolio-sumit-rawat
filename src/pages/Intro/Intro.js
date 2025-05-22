@@ -73,11 +73,8 @@ function Intro() {
                   <b>love to use</b>.
                 </p>
 
-                <a href="/Sumit_Singh_Rawat_UIUX_Resume.pdf" download>
-                  <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                    Download Resume
-                  </button> 
-                </a>
+                  <a className="bg-blue-500 text-white px-4 py-2 rounded ResumeBtn" href="/Sumit_Singh_Rawat_UIUX_Resume.pdf" download>
+                      Download Resume</a>
                 <ScrollLink
                   to="Projects"
                   smooth={true}
