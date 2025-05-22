@@ -73,7 +73,7 @@ function Intro() {
                   <b>love to use</b>.
                 </p>
 
-                <a href="/Sumit_Rawat_Senior_UIUX_Resume.pdf" download>
+                <a href="/Sumit_Singh_Rawat_UIUX_Resume.pdf" download>
                   <button className="bg-blue-500 text-white px-4 py-2 rounded">
                     Download Resume
                   </button> 
