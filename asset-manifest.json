@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-sumit-rawat/static/css/main.20bfcfab.css",
-    "main.js": "/portfolio-sumit-rawat/static/js/main.13594b95.js",
+    "main.css": "/portfolio-sumit-rawat/static/css/main.871bd27b.css",
+    "main.js": "/portfolio-sumit-rawat/static/js/main.74d5e2d1.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio-sumit-rawat/static/js/488.9561f9b8.chunk.js",
     "static/media/Portfolio1.png": "/portfolio-sumit-rawat/static/media/Portfolio1.c5e2af47ee43e1e84f40.png",
     "static/media/IntroBg.jpg": "/portfolio-sumit-rawat/static/media/IntroBg.245d563415883afb9642.jpg",
@@ -11,16 +11,16 @@
     "static/media/AboutImg.png": "/portfolio-sumit-rawat/static/media/AboutImg.b02b387bba9aa812c3c2.png",
     "static/media/Poppins-Regular.ttf": "/portfolio-sumit-rawat/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Jost-VariableFont_wght.ttf": "/portfolio-sumit-rawat/static/media/Jost-VariableFont_wght.34835cd554b7b71732e2.ttf",
-    "static/media/CVImg.png": "/portfolio-sumit-rawat/static/media/CVImg.533d3a23f07754e8a2eb.png",
+    "static/media/CVImg.png": "/portfolio-sumit-rawat/static/media/CVImg.0f7edc523a903dbdda15.png",
     "static/media/UIText.png": "/portfolio-sumit-rawat/static/media/UIText.92bb7a7df5d588d6feb2.png",
     "static/media/MyAvatar.png": "/portfolio-sumit-rawat/static/media/MyAvatar.1d5ec6ae1443cacefa12.png",
     "index.html": "/portfolio-sumit-rawat/index.html",
-    "main.20bfcfab.css.map": "/portfolio-sumit-rawat/static/css/main.20bfcfab.css.map",
-    "main.13594b95.js.map": "/portfolio-sumit-rawat/static/js/main.13594b95.js.map",
+    "main.871bd27b.css.map": "/portfolio-sumit-rawat/static/css/main.871bd27b.css.map",
+    "main.74d5e2d1.js.map": "/portfolio-sumit-rawat/static/js/main.74d5e2d1.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio-sumit-rawat/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20bfcfab.css",
-    "static/js/main.13594b95.js"
+    "static/css/main.871bd27b.css",
+    "static/js/main.74d5e2d1.js"
   ]
 }
