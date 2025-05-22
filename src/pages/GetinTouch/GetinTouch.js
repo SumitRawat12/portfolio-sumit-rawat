@@ -47,16 +47,22 @@ function GetinTouch() {
                   ssr192031@gmail.com
                 </div>
                 <div className="col-span-6 flex items-center text-[18px] text-white">
-                  <img src={BehanceIcon} className="w-[40px] mr-4" alt="" />{" "}
-                  Behance
+                  <a href="https://www.behance.net/sumitrawat53" target="_blank" className="flex items-center">
+                    <img src={BehanceIcon} className="w-[40px] mr-4" alt="" />{" "}
+                    Behance
+                  </a>
                 </div>
                 <div className="col-span-6 flex items-center text-[18px] text-white">
-                  <img src={LinkedinIcon} className="w-[40px] mr-4" alt="" />{" "}
-                  LinkedIn
+                  <a href="https://www.linkedin.com/in/sumit-singh-rawat-b21593243/" target="_blank" className="flex items-center">
+                    <img src={LinkedinIcon} className="w-[40px] mr-4" alt="" />{" "}
+                    LinkedIn
+                  </a>
                 </div>
                 <div className="col-span-6 flex items-center text-[18px] text-white">
-                  <img src={DribbbleIcon} className="w-[40px] mr-4" alt="" />{" "}
-                  Dribbble
+                  <a href="https://dribbble.com/UIuxdesigner-Sumit" target="_blank" className="flex items-center">
+                    <img src={DribbbleIcon} className="w-[40px] mr-4" alt="" />{" "}
+                    Dribbble
+                  </a>
                 </div>
               </div>
             </motion.div>
