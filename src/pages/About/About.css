@@ -21,8 +21,13 @@
     display: flex;
     align-items: center;
     border: 1px solid #343434;
-    padding: 20px 30px;
+    padding: 20px;
     transition: 0.5s ease-in-out;
+}
+
+.AboutSectionPage .AboutExpertiseBox b{
+    font-size: 30px;
+    margin-right: 20px;
 }
 
 .AboutSectionPage .AboutExpertiseBox:hover{
@@ -36,13 +41,13 @@
 
 .AboutSectionPage .AboutExpertiseBox span{
     color: #DDDDDD;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .AboutSectionPage h5{
     color: #BFBFBF;
     font-size: 16px;
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: 0.5px;
 }
 
@@ -50,4 +55,14 @@
     display: inline-block;
     width: 30px;
     margin-right: 20px;
+}
+
+.ToolsBox span{
+    display: inline-block;
+    background: #0E1925;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #3f3f3f;
+    margin: 6px 4px;
 }

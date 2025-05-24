@@ -51,35 +51,43 @@ function Skills() {
           <ul>
             <li>
               <h4>
-                <img className="flip" src={SkillUXIcon} alt="SkiilUXicon" /> UX Skills
+                <img className="flip" src={SkillUIIcon} alt="SkiilUIIcon" /> UI
+                Skills
               </h4>
               <hr />
               <p>
-                <span>User Research</span> <span>Data-Driven Design</span>{" "}
-                <span>UX Strategy</span> <span>Prototyping</span>{" "}
+                <span>Motion Design</span> <span>Visual Storytelling</span>
+                <span>Design Systems</span> <span>Microinteractions</span>
+                <span>Interaction Design</span>
+                <span>Scalable UI</span>
+                <span>Dark & Light Mode</span>
+              </p>
+            </li>
+            <li>
+              <h4>
+                <img className="flip" src={SkillUXIcon} alt="SkiilUXicon" /> UX
+                Skills
+              </h4>
+              <hr />
+              <p>
+                <span>User Research</span> <span>Data-Driven Design</span>
+                <span>UX Strategy</span> <span>Prototyping</span>
                 <span>Wireframing</span> <span>Information Architecture</span>
               </p>
             </li>
             <li>
               <h4>
-                <img className="flip" src={SkillUIIcon} alt="SkiilUIIcon" /> UI Skills
-              </h4>
-              <hr />
-              <p>
-                <span>UI Motion Design</span> <span>Visual Storytelling</span>{" "}
-                <span>Design Systems</span> <span>Microinteractions</span>{" "}
-                <span>Interaction Design</span>{" "}
-                <span>Scalable UI Frameworks</span>{" "}
-                <span>Dark & Light Mode UI</span>
-              </p>
-            </li>
-            <li>
-              <h4>
-                <img className="flip" src={SkillToolIcon} alt="SkiilToolIcon" /> Tools
+                <img className="flip" src={SkillToolIcon} alt="SkiilToolIcon" />
+                Tools
               </h4>
               <hr />
               <p>
                 <span>Figma</span>
+                <span>Figma Tokens</span>
+                <span>Iconify</span>
+                <span>Mockup</span>
+                <span>Content Reel</span>
+                <span>FigJam</span>
               </p>
             </li>
           </ul>

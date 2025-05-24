@@ -1,6 +1,6 @@
 .HeaderSection {
     padding: 20px 8em;
-    background-color: #08202F;
+    background-color: #031018b3;
 }
 
 .HeaderSection .FixedSidebar{
@@ -36,12 +36,12 @@
     color: #eee;
     margin-left: 20px;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .HeaderSection .FixedSidebar .Sidebarheader h4 span{
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     color: #4C7CF4;
 }
 
@@ -52,13 +52,13 @@
 .HeaderSection .FixedSidebar ul li{
     list-style: disc;
     color: #fff;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
 .HeaderSection .FixedSidebar ul li a{
     color: #e3e3e3;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     transition: 0.5s ease-in-out;
 }

@@ -42,23 +42,23 @@ function GetinTouch() {
               transition={{ duration: 1, type: "spring", stiffness: 50 }}
             >
               <div className="grid grid-cols-12 gap-y-6">
-                <div className="col-span-6 flex items-center text-[18px] text-white">
+                <div className="col-span-6 flex items-center text-[24px] text-white">
                   <img src={MailIcon} className="w-[40px] mr-4" alt="" />{" "}
                   ssr192031@gmail.com
                 </div>
-                <div className="col-span-6 flex items-center text-[18px] text-white">
+                <div className="col-span-6 flex items-center text-[24px] text-white">
                   <a href="https://www.behance.net/sumitrawat53" target="_blank" className="flex items-center">
                     <img src={BehanceIcon} className="w-[40px] mr-4" alt="" />{" "}
                     Behance
                   </a>
                 </div>
-                <div className="col-span-6 flex items-center text-[18px] text-white">
+                <div className="col-span-6 flex items-center text-[24px] text-white">
                   <a href="https://www.linkedin.com/in/sumit-singh-rawat-b21593243/" target="_blank" className="flex items-center">
                     <img src={LinkedinIcon} className="w-[40px] mr-4" alt="" />{" "}
                     LinkedIn
                   </a>
                 </div>
-                <div className="col-span-6 flex items-center text-[18px] text-white">
+                <div className="col-span-6 flex items-center text-[24px] text-white">
                   <a href="https://dribbble.com/UIuxdesigner-Sumit" target="_blank" className="flex items-center">
                     <img src={DribbbleIcon} className="w-[40px] mr-4" alt="" />{" "}
                     Dribbble

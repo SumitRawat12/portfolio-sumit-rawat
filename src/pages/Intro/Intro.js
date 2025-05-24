@@ -22,7 +22,7 @@ function Intro() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const titles = ["UI/UX Designer", "Frontend Developer", "Web Designer" ];
+  const titles = ["UI/UX Designer", "Interaction Designer", "Design Thinker", "Product Experience Creator" ];
 
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
@@ -61,8 +61,8 @@ function Intro() {
                 animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : -100 }}
                 transition={{ duration: 1, type: "spring", stiffness: 50 }}
               >
-                <h6>I AM</h6>
-                <h2>Sumit Singh Rawat, a </h2>
+                <h6>Hi, I'm</h6>
+                <h2>Sumit Singh Rawat - </h2>
                 <h3>
                   {text}
                   <span className="blinking-cursor">|</span>

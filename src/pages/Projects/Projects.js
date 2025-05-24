@@ -11,7 +11,7 @@ function Projects() {
     triggerOnce: true,
     threshold: 0.3,
   });
-
+  
   return (
     <section className="ProjectsPagesection" id="Projects">
       <div className="container mx-auto">
@@ -26,9 +26,9 @@ function Projects() {
               LATEST PORTFOLIO
               {/* <img className="ml-4 animate-rotateY" src={aboutusshape1} alt="" /> */}
             </h6>
-            <h2 className="">Transforming Ideas into Impactful Designs</h2>
+            <h2 className="">Designs That Work. Experiences That Wow</h2>
             <p className="text-[14px] font-bold leading-[26px] tracking-[0.7px] text-[#DDDDDD] py-4 text-center">
-              Showcasing innovative UI/UX solutions that enhance user <br /> experience and drive business success.
+            Designing meaningful UI/UX that connects users, solves problems, <br /> and builds success.
             </p>
           </motion.div>
         </div>
