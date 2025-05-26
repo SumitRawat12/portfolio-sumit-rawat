@@ -22,7 +22,12 @@ function Intro() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const titles = ["UI/UX Designer", "Interaction Designer", "Design Thinker", "Product Experience Creator" ];
+  const titles = [
+    "UI/UX Designer",
+    "Interaction Designer",
+    "Design Thinker",
+    "Product Experience Creator",
+  ];
 
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
@@ -73,18 +78,20 @@ function Intro() {
                   <b>love to use</b>.
                 </p>
 
-                  <a className="bg-blue-500 text-white px-4 py-2 rounded ResumeBtn" href="/Sumit_Singh_Rawat_UIUX_Resume.pdf" download>
-                      Download Resume</a>
+                <a
+                  className="bg-blue-500 text-white px-4 py-2 rounded ResumeBtn"
+                  href="/Sumit_Singh_Rawat_UIUX_Resume.pdf"
+                  download
+                >
+                  Download Resume
+                </a>
                 <ScrollLink
                   to="Projects"
                   smooth={true}
                   duration={500}
                   offset={-50}
-                  className="cursor-pointer text-xl font-semibold text-blue-500 hover:text-blue-700"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <button className="ViewMyWorkBtn">View my work</button>
-                </ScrollLink>
+                  className="cursor-pointer text-xl font-semibold text-blue-500 hover:text-blue-700 ViewMyWorkBtn"
+                  onClick={() => setIsOpen(false)}>View my work</ScrollLink>
 
                 <h5>Find me on</h5>
                 <a href="mailto:ssr192031@gmail.com">

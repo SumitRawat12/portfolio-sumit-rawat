@@ -85,36 +85,37 @@ p {
 /* RESPONSIVE CSS */
 
 @media (max-width: 600px) {
-  section, footer {
-    padding: 1em !important;
+  section,
+  footer {
+    padding: 3em 1em !important;
   }
 
   h6 {
-    font-size: 14px !important;
+    font-size: 24px !important;
     margin-bottom: 10px !important;
   }
 
   h2 {
-    font-size: 24px !important;
+    font-size: 30px !important;
     padding: 0 !important;
     line-height: normal !important;
   }
 
   p {
-    font-size: 12px !important;
+    font-size: 14px !important;
     padding: 10px 0 !important;
-    line-height: 20px !important;
+    line-height: 24px !important;
   }
 
   .HeaderSection {
     padding: 20px 1em !important;
   }
 
-  .HeaderSection .FixedSidebar{
+  .HeaderSection .FixedSidebar {
     width: 98% !important;
   }
 
-  .HeaderSection h4{
+  .HeaderSection h4 {
     font-size: 14px !important;
   }
 
@@ -122,6 +123,7 @@ p {
 
   .IntroSectionPage {
     padding-top: 5em !important;
+    height: auto !important;
   }
 
   .IntroSectionPage .gap-2 {
@@ -133,7 +135,7 @@ p {
     padding-right: 0 !important;
   }
   .IntroSectionPage .IntroLeftAside h3 {
-    font-size: 22px !important;
+    font-size: 24px !important;
     margin-top: 6px !important;
   }
   .IntroSectionPage .IntroLeftAside button {
@@ -142,12 +144,26 @@ p {
     margin-right: 10px !important;
     margin-bottom: 10px !important;
   }
+  .IntroSectionPage .IntroLeftAside .ResumeBtn{
+    display: block !important;
+    margin: 10px auto !important;
+    text-align: center !important;
+  }
   .IntroSectionPage .IntroRightAside {
-    width: 70% !important;
-    margin: 20px auto !important;
+    width: 90% !important;
+    margin: 40px auto 0 !important;
+  }
+  .IntroSectionPage .IntroLeftAside .ViewMyWorkBtn{
+    display: block !important;
+    margin: 10px auto !important;
+    text-align: center !important;
   }
 
   /* ABOUT US SECTION */
+
+  .AboutSectionPage .ToolsBox{
+    margin-bottom: 40px;
+  }
 
   .AboutSectionPage .grid {
     display: block !important;
@@ -257,22 +273,23 @@ p {
   }
 
   /* GET IN TOUCH SECTION */
-  .GetinTouchPagesection .gap-20, .GetinTouchPagesection .grid {
+  .GetinTouchPagesection .gap-20,
+  .GetinTouchPagesection .grid {
     gap: 0 !important;
     display: block !important;
   }
 
-  .GetinTouchPagesection .col-span-5 img{
+  .GetinTouchPagesection .col-span-5 img {
     display: none !important;
   }
 
-  .GetinTouchPagesection h6{
+  .GetinTouchPagesection h6 {
     margin: 0 !important;
   }
 
   /* FOOTER SECTION */
-  .FooterPage{
-    padding: 2px 1em!important;
+  .FooterPage {
+    padding: 2px 1em !important;
     text-align: center !important;
   }
 }
