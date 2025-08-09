@@ -58,12 +58,12 @@ function GetinTouch() {
                     LinkedIn
                   </a>
                 </div>
-                <div className="col-span-6 flex items-center text-[24px] text-white">
+                {/* <div className="col-span-6 flex items-center text-[24px] text-white">
                   <a href="https://dribbble.com/UIuxdesigner-Sumit" target="_blank" className="flex items-center">
                     <img src={DribbbleIcon} className="w-[40px] mr-4" alt="" />{" "}
                     Dribbble
                   </a>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           </div>
