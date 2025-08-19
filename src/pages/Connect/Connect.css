@@ -1,0 +1,71 @@
+.ConnectPagesection {
+  padding: 60px 80px;
+
+  .ConnectFlex {
+    display: flex;
+    justify-content: space-between;
+
+    .ConnectFlexCard {
+      text-align: center;
+      width: 400px;
+
+      img {
+        margin: 0 auto 20px;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: #1d2939;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      button {
+        margin-top: 20px;
+        display: inline-flex;
+        align-items: center;
+        color: #fd853a;
+        font-weight: bold;
+        font-size: 18px;
+        transition-duration: 0.3s;
+        transform: translateY(0); 
+
+        img {
+          margin: 0 4px;
+          width: 30px;
+        }
+      }
+
+      button:hover{
+        transform: translateY(-4px);
+      }
+
+      .btnTxt {
+        color: #1d2939;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .DownloadResumeBtn {
+    display: inline-flex;
+    background: #fd853a;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 40px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 100px;
+    font-size: 22px;
+    transition-duration: 0.3s;
+    transform: translateY(0); 
+  }
+
+  .DownloadResumeBtn:hover {
+    transform: translateY(-4px);
+  }
+}

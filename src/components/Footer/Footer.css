@@ -1,11 +1,37 @@
-.FooterPage {
-    padding: 20px 8em;
-    background: #083958;
-}
+.FooterPagesection {
+    padding: 60px 80px;
+    background: #1D2939;
+    color: #fff;
 
-.FooterPage p {
-    color: #eee;
-    font-weight: bold;
-    letter-spacing: 0.7px;
-    font-size: 16px;
+    h6{
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h4{
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .FooterFlex{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            display: inline-block;
+            border: 1px solid #fff;
+            margin-right: 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.5s ease-in-out;
+        }
+
+        a:hover{
+            background-color: #fd853a;
+        }
+    }
 }

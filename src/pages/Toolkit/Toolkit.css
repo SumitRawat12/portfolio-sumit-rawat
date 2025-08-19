@@ -1,0 +1,26 @@
+.ToolkitPagesection {
+    padding: 60px 80px;
+  
+    .ToolkitFlex {
+      display: flex;
+      justify-content: space-between;
+  
+      .ToolkiFlexCard {
+        text-align: center;
+        width: 300px;
+        background: #eee6df;
+        padding: 30px 40px;
+        border-radius: 30px;
+  
+        img {
+          margin: 0 auto;
+        }
+  
+        h4{
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  

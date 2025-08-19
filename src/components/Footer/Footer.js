@@ -1,32 +1,53 @@
-import React from 'react'
-import './Footer.css';
-
-
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
+  return (
+    <footer className="FooterPagesection animate-slide-up">
+      <h6>© 2025 Sumit Singh Rawat. All rights reserved.</h6>
+      <h4>Thank you for visiting my portfolio </h4>
 
-    // ANIMATION
-    const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: true, threshold: 0.3 });
+      <div className="FooterFlex">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/sumit-singh-rawat-b21593243/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
 
-    return (
-        <footer className='FooterPage'>
-            <div className='container mx-auto'>
-                <div className='flex items-center justify-center'>
-                    <motion.div
-                        ref={ref7}
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: inView7 ? 1 : 0, y: inView7 ? 0 : -100 }}
-                        transition={{ duration: 1, type: "spring", stiffness: 50 }}
-                    >
-                        <p>© 2025 Sumit Singh Rawat. All Rights Reserved.</p>
-                    </motion.div>
-                </div>
-            </div>
-        </footer>
-    )
+          <a
+            href="mailto:ssr192031@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email
+          </a>
+
+          <a
+            href="https://github.com/SumitRawat12/portfolio-sumit-rawat"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.behance.net/sumitrawat-uiux"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Behance
+          </a>
+        </div>
+
+        <h5>
+          Design & Development by <b>Sumit Singh Rawat</b>
+        </h5>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

@@ -1,68 +1,66 @@
 .HeaderSection {
-    padding: 20px 8em;
-    background-color: #031018b3;
-}
+  padding: 20px 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
-.HeaderSection .FixedSidebar{
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 25%;
-    background-color: #031724;
-    padding: 30px;
-}
-
-.HeaderSection .FixedSidebar .Sidebarheader{
+  .NavIntroFlex {
     display: flex;
+
+    img {
+      object-fit: contain;
+      margin-right: 10px;
+    }
+
+    span {
+      display: block;
+      color: #98a2b3;
+      font-size: 14px;
+    }
+
+    h6 {
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+
+  .Navbar {
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #323d58;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
+    border-radius: 100px;
+    background: #171717;
+    padding: 20px 20px;
+    display: flex;
+    position: relative;
+    box-shadow: -10px 20px 80px -20px #fd853a;
 
-.HeaderSection .FixedSidebar .Sidebarheader i{
-    color: #fff;
-    font-size: 24px;
-    margin-right: 20px;
-    cursor: pointer;
-}
+    li {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      width: 174px;
+      position: relative;
+      z-index: 2;
+      padding: 15px 0;
+    }
 
-.HeaderSection .FixedSidebar .Sidebarheader img{
-    width: 50px;
-}
+    li.active {
+      /* background: #fd853a; */
+      border-radius: 100px;
+    }
+  }
 
-.HeaderSection .FixedSidebar .Sidebarheader h4{
-    color: #eee;
-    margin-left: 20px;
-    font-weight: 800;
-    font-size: 24px;
-}
-
-.HeaderSection .FixedSidebar .Sidebarheader h4 span{
-    display: block;
-    font-size: 18px;
-    color: #4C7CF4;
-}
-
-.HeaderSection .FixedSidebar ul{
-    padding-left: 20px;
-}
-
-.HeaderSection .FixedSidebar ul li{
-    list-style: disc;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.HeaderSection .FixedSidebar ul li a{
-    color: #e3e3e3;
-    display: block;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.5s ease-in-out;
-}
-
-.HeaderSection .FixedSidebar ul li a:hover{
-    color: #4C7CF4;
+  .slider-bar {
+    position: absolute;
+    bottom: 20%;
+    height: 57px;
+    background: #fd853a;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    border-radius: 100px;
+    z-index: 1;
+  }
 }

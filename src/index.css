@@ -3,293 +3,334 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Jost";
-  src: url("../src/assets/fonts/Jost-VariableFont_wght.ttf") format("truetype");
+  font-family: "Outfit";
+  src: url("../src/assets/fonts/Outfit-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("../src/assets/fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+/* ANIMATION CSS */
 
-body {
-  font-family: "Jost", sans-serif;
-  background-color: #08202f;
-  scroll-behavior: smooth;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-}
-
-@keyframes bounce {
-  0%,
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
   100% {
     transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.bounce {
-  animation: bounce 1s infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.2;
-  }
 }
 
-.blink {
-  animation: blink 1s infinite;
-}
-
-@keyframes flip {
+@keyframes slide-up {
   0% {
-    transform: rotateY(0);
-  }
-  50% {
-    transform: rotateY(180deg);
+    transform: translateY(100px);
+    opacity: 0;
   }
   100% {
-    transform: rotateY(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-.flip {
-  animation: flip 4s infinite;
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.blinking-cursor {
-  font-weight: bold;
-  font-size: 1.2em;
-  animation: blink 1s infinite;
+@keyframes slide-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-@keyframes blink {
+.animate-slide-down,
+.animate-slide-up,
+.animate-slide-left,
+.animate-slide-right {
+  opacity: 0;
+}
+
+.animate-slide-down.visible {
+  animation: slide-down 0.6s ease-out forwards;
+}
+.animate-slide-up.visible {
+  animation: slide-up 0.6s ease-out forwards;
+}
+.animate-slide-left.visible {
+  animation: slide-left 0.6s ease-out forwards;
+}
+.animate-slide-right.visible {
+  animation: slide-right 0.6s ease-out forwards;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
   50% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
 
-/* RESPONSIVE CSS */
+.animate-fade-in-out {
+  opacity: 0;
+}
 
-@media (max-width: 600px) {
-  section,
-  footer {
-    padding: 3em 1em !important;
+.animate-fade-in-out.visible {
+  animation: fade-in-out 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  opacity: 0;
+}
+
+.animate-fade-in.visible {
+  animation: fade-in 0.8s ease-in forwards;
+}
+
+@keyframes bounce-ball {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce-ball {
+  animation: bounce-ball 2s infinite;
+}
+
+/* END ANIMATION CSS */
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #fff7ef;
+  color: #1d2939;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+.MobileHeader {
+  display: none !important;
+}
+
+/* -------------------- MEDIA RESPONSIVE CSS */
+
+@media only screen and (max-width: 600px) {
+  .MobileHeader {
+    display: flex !important;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #1D2939; */
+
+    .NewLogo {
+      width: 150px;
+    }
   }
 
-  h6 {
-    font-size: 24px !important;
-    margin-bottom: 10px !important;
+  .HeaderSection,
+  .IntroOneBox,
+  .IntroThreeBox {
+    display: none !important;
   }
 
-  h2 {
-    font-size: 30px !important;
-    padding: 0 !important;
-    line-height: normal !important;
-  }
-
-  p {
-    font-size: 14px !important;
-    padding: 10px 0 !important;
-    line-height: 24px !important;
-  }
-
-  .HeaderSection {
-    padding: 20px 1em !important;
-  }
-
-  .HeaderSection .FixedSidebar {
-    width: 98% !important;
-  }
-
-  .HeaderSection h4 {
-    font-size: 14px !important;
-  }
-
-  /* INTRO SECTION CSS */
-
-  .IntroSectionPage {
-    padding-top: 5em !important;
-    height: auto !important;
-  }
-
-  .IntroSectionPage .gap-2 {
-    gap: 0 !important;
+  .HeadingSection {
     display: block !important;
+
+    h2 {
+      font-size: 30px !important;
+      span {
+        font-size: 14px !important;
+      }
+    }
+
+    button {
+      margin-top: 20px !important;
+      padding: 16px 30px !important;
+      font-size: 16px !important;
+    }
   }
 
-  .IntroSectionPage .IntroLeftAside {
-    padding-right: 0 !important;
-  }
-  .IntroSectionPage .IntroLeftAside h3 {
-    font-size: 24px !important;
-    margin-top: 6px !important;
-  }
-  .IntroSectionPage .IntroLeftAside button {
-    font-size: 15px !important;
-    padding: 8px 15px !important;
-    margin-right: 10px !important;
-    margin-bottom: 10px !important;
-  }
-  .IntroSectionPage .IntroLeftAside .ResumeBtn{
-    display: block !important;
-    margin: 10px auto !important;
-    text-align: center !important;
-  }
-  .IntroSectionPage .IntroRightAside {
-    width: 90% !important;
-    margin: 40px auto 0 !important;
-  }
-  .IntroSectionPage .IntroLeftAside .ViewMyWorkBtn{
-    display: block !important;
-    margin: 10px auto !important;
-    text-align: center !important;
-  }
+  section {
+    div.swiper {
+      height: 330px !important;
 
-  /* ABOUT US SECTION */
+      .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+      }
 
-  .AboutSectionPage .ToolsBox{
-    margin-bottom: 40px;
-  }
+      .swiper-pagination-bullet-active {
+        width: 40px !important;
+        height: 10px !important;
+      }
+    }
 
-  .AboutSectionPage .grid {
-    display: block !important;
-  }
-
-  .AboutSectionPage .AboutExpertiseBox {
-    margin-bottom: 10px !important;
-  }
-
-  .AboutSectionPage .AboutExpertiseBox:last-child {
-    margin-bottom: 0 !important;
-  }
-
-  .AboutSectionPage img.w-full {
-    margin-bottom: 30px !important;
-  }
-
-  .ProjectsPagesection .MuiTabs-flexContainer {
-    display: block !important;
-  }
-
-  .ProjectsPagesection .MuiButtonBase-root {
-    display: block !important;
-    border-radius: 10px !important;
-    width: 100% !important;
-    margin-bottom: 10px !important;
-  }
-
-  .ProjectsPagesection .CustomSwiperBox h4 {
-    font-size: 16px !important;
-  }
-
-  .ProjectsPagesection .CustomSwiperBox div {
-    display: block !important;
-  }
-
-  .ProjectsPagesection .CustomSwiperBox ul {
-    margin-top: 20px;
-    justify-content: left;
-  }
-
-  /* SKILLS SECTION */
-
-  .SkillsPageSection .flex {
-    display: block !important;
-  }
-
-  .SkillsPageSection .flex p {
-    text-align: left !important;
-  }
-
-  .SkillsPageSection ul li {
-    display: block !important;
     padding: 20px !important;
+
+    .IntroTwoBox .BulrbgCta {
+      width: auto !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+    }
+
+    .IntroTwoBox .BulrbgCta button {
+      font-size: 18px !important;
+      padding: 6px 20px !important;
+
+      img {
+        width: 40px !important;
+      }
+    }
   }
 
-  .SkillsPageSection ul li hr {
-    display: none !important;
+  .UXProcessPagesection {
+    & .UXProcessCardsBox {
+      .ArrowImg {
+        display: none !important;
+      }
+    }
   }
 
-  .SkillsPageSection ul li h4 img {
-    width: 50px !important;
-    margin-right: 10px !important;
+  .AboutPageSection {
+    .AboutBox {
+      padding: 30px 20px !important;
+      border-radius: 20px !important;
+
+      img{
+        margin: 30px auto 10px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+    }
   }
 
-  .SkillsPageSection ul li p {
-    text-align: left !important;
-    min-width: auto !important;
-    max-width: auto !important;
-    width: auto !important;
+  .SkillsPagesection {
+    .SkillsFlex {
+      display: block !important;
+    }
   }
 
-  .SkillsPageSection ul li p span {
-    font-size: 12px !important;
-    padding: 6px 10px !important;
+  .SkillsPagesection {
+    & .SkillsFlex {
+      .SkillsFlexCard {
+        margin: 0 auto 20px !important;
+      }
+    }
   }
 
-  .SkillsPageSection ul li h4 {
-    font-size: 20px !important;
+  .ToolkitPagesection {
+    .ToolkitFlex {
+      display: block !important;
+    }
+    .ToolkiFlexCard {
+      margin: 0 auto 20px !important;
+    }
   }
 
-  /* ACHIEVEMENT SECTION */
-  .AchievementPagesection .gap-20 {
-    gap: 0 !important;
-    display: block !important;
+  .TestimonialPagesection div.swiper {
+    .TestimonialBox {
+      padding: 20px !important;
+
+      p {
+        font-size: 15px !important;
+      }
+    }
+
+    height: 410px !important;
   }
 
-  .AchievementPagesection h2 {
-    margin-bottom: 20px !important;
+  .ConnectPagesection {
+    .ConnectFlex {
+      display: block !important;
+
+      .ConnectFlexCard {
+        width: auto !important;
+        margin: 0 auto 40px !important;
+      }
+    }
   }
 
-  .AchievementPagesection ul li span {
-    font-size: 14px !important;
+  .FooterPagesection {
+    h5 {
+      text-align: center;
+    }
+
+    .FooterFlex {
+      margin-top: 30px !important;
+      display: block !important;
+
+      a {
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+      }
+    }
+
+    h6 {
+      font-size: 16px !important;
+    }
+
+    h4 {
+      font-size: 30px !important;
+    }
+
+    padding: 40px 20px !important;
   }
 
-  .AchievementPagesection ul li h4 {
-    font-size: 16px !important;
-  }
+  .FeaturedSectionPage {
+    & .CustomSwiperBox {
+      .pr-\[80px\]{
+        padding-right: 0px !important;
+      }
+      h3{
+        font-size: 20px !important;
+      }
 
-  .AchievementPagesection ul li h5 {
-    padding-top: 4px !important;
-    font-size: 14px !important;
-  }
-
-  .AchievementPagesection h2 img {
-    width: 30px !important;
-  }
-
-  /* GET IN TOUCH SECTION */
-  .GetinTouchPagesection .gap-20,
-  .GetinTouchPagesection .grid {
-    gap: 0 !important;
-    display: block !important;
-  }
-
-  .GetinTouchPagesection .col-span-5 img {
-    display: none !important;
-  }
-
-  .GetinTouchPagesection h6 {
-    margin: 0 !important;
-  }
-
-  /* FOOTER SECTION */
-  .FooterPage {
-    padding: 2px 1em !important;
-    text-align: center !important;
+      p{
+        font-size: 16px !important;
+      }
+      .NextArrowImg {
+        width: 60px !important;
+      }
+    }
   }
 }

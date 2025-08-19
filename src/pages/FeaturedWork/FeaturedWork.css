@@ -1,0 +1,134 @@
+.FeaturedSectionPage {
+  padding: 60px 80px;
+
+  .CustomSwiperBox {
+    border-radius: 20px;
+    padding: 15px;
+    background: #eee6df;
+
+    img {
+      border-radius: 20px;
+    }
+
+    h3 {
+      padding: 30px 0;
+      font-size: 24px;
+      font-weight: bold;
+      transition: 0.5s ease-in-out;
+      letter-spacing: 0.3px;
+      line-height: 34px;
+      cursor: pointer;
+
+      span {
+        font-size: 16px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: #171717;
+        margin-bottom: 10px;
+      }
+    }
+
+    h3:hover {
+      color: #fd853a;
+    }
+
+    .NextArrowImg {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      z-index: 999;
+      width: 70px;
+    }
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      width: 15px;
+      border-radius: 50px;
+      height: 15px;
+      background: #171717;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 60px;
+      border-radius: 50px;
+      height: 15px;
+      background: #fd853a !important;
+    }
+  }
+
+  .ModalSection {
+    .ModalSectionBox {
+      width: 80%;
+      overflow: auto;
+      height: 98vh;
+      position: relative;
+      text-align: right;
+
+      button {
+        background: #fd853a;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        font-size: 22px;
+        position: fixed;
+        top: 0;
+        /* right: 0; */
+      }
+    }
+  }
+}
+
+.HeadingSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  h2 {
+    color: #1d2939;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: normal;
+
+    b {
+      color: #fd853a;
+    }
+
+    span {
+      color: #fd853a;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+
+  button {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: #fd853a;
+    border: 2px solid #fd853a;
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.5s all ease-in-out;
+  }
+
+  button:hover {
+    background: transparent;
+    color: #fd853a;
+  }
+}
