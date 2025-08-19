@@ -37,7 +37,7 @@ function Connect() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Sumit_Rawat_Product_UIUX_Designer_Resume.pdf";
+    link.href = process.env.PUBLIC_URL + "/Sumit_Rawat_Product_UIUX_Designer_Resume.pdf";
     link.download = "Sumit_Rawat_Product_UIUX_Designer_Resume.pdf";
     link.click();
   };
