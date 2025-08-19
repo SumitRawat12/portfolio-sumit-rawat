@@ -1,46 +1,53 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-
+import { useEffect } from "react";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Hero from "./pages/Hero/Hero";
+import FeaturedWork from "./pages/FeaturedWork/FeaturedWork";
+import UxProcess from "./pages/UxProcess/UxProcess";
+import About from "./pages/About/About";
+import Skiils from "./pages/Skiils/Skiils";
+import Toolkit from "./pages/Toolkit/Toolkit";
+import Testimonial from "./pages/Testimonial/Testimonial";
+import Connect from "./pages/Connect/Connect";
+import Footer from "./components/Footer/Footer";
+import Comingsoon from "./components/ComingSoon/ComingSoon";
 
-import HomePage from "./pages/HomePage/HomePage";
-
-function ScrollAnimationObserver() {
-  const location = useLocation();
-
+function App() {
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
+            observer.unobserve(entry.target); // only once
           }
         });
       },
       { threshold: 0.2 }
     );
 
-    document
-      .querySelectorAll(
-        ".animate-slide-down, .animate-slide-up, .animate-slide-left, .animate-slide-right, .animate-fade-in-out, .animate-fade-in, .animate-bounce-in"
-      )
-      .forEach((el) => observer.observe(el));
+    document.querySelectorAll(
+      ".animate-slide-down, .animate-slide-up, .animate-slide-left, .animate-slide-right, .animate-fade-in-out, .animate-fade-in, .animate-bounce-in"
+    ).forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, [location]);
+  }, []);
 
-  return null;
-}
-
-function App() {
   return (
-    <Router>
-      <ScrollAnimationObserver />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
+    <>
+      {/* <Comingsoon /> */}
+      <Header />
+      <Hero />
+      <FeaturedWork />
+      <UxProcess />
+      <About />
+      <Skiils />
+      <Toolkit />
+      <Testimonial />
+      <Connect />
+      <Footer />
+    </>
   );
 }
 
