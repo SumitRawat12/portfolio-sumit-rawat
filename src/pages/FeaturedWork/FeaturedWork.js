@@ -11,6 +11,7 @@ import AudireaderWork2 from "../../assets/images/Featured-Work/ARUX-CS.jpg";
 import CareerlinkWork from "../../assets/images/Featured-Work/CL-CS.jpg";
 import SportstrackerWork from "../../assets/images/Featured-Work/SD-CS.jpg";
 import GenZKartWork from "../../assets/images/Featured-Work/GK-CS.jpg";
+import DazzleBirdsWork from "../../assets/images/Featured-Work/DB-CS.jpg";
 import AppinventivWork from "../../assets/images/Featured-Work/AP-CS.jpg";
 import EclypseWork from "../../assets/images/Featured-Work/EF-CS.jpg";
 
@@ -20,6 +21,7 @@ import CSAudireaderWork2 from "../../assets/images/Featured-Work/CS/ARCS-UX.jpg"
 import CSCareerlinkWork from "../../assets/images/Featured-Work/CS/CLCS.jpg";
 import CSSportstrackerWork from "../../assets/images/Featured-Work/CS/FCS.jpg";
 import CSGenZKartWork from "../../assets/images/Featured-Work/CS/GKCS.jpg";
+import CSDazzleBirdsWork from "../../assets/images/Featured-Work/CS/DBCS.jpg";
 import CSAppinventivWork from "../../assets/images/Featured-Work/CS/AICS.jpg";
 import CSEclypseWork from "../../assets/images/Featured-Work/CS/EFCS.jpg";
 
@@ -57,6 +59,12 @@ function FeaturedWork() {
       modalImg: CSGenZKartWork,
       title: "GenZkart",
       desc: "Trendy e-commerce optimized for mobile-first Gen Z shoppers.",
+    },
+    {
+      img: DazzleBirdsWork,
+      modalImg: CSDazzleBirdsWork,
+      title: "Dazzlebirds",
+      desc: "Vibrant creative platform redesigned with modern or storytelling.",
     },
     {
       img: AppinventivWork,
