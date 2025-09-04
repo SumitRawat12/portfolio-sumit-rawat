@@ -332,5 +332,10 @@ section {
         width: 60px !important;
       }
     }
+    
+    .CustomSwiperBox{
+      width: 100% !important;
+      margin: 0 auto 20px !important;
+    }
   }
 }

@@ -25,6 +25,8 @@ import CSDazzleBirdsWork from "../../assets/images/Featured-Work/CS/DBCS.jpg";
 import CSAppinventivWork from "../../assets/images/Featured-Work/CS/AICS.jpg";
 import CSEclypseWork from "../../assets/images/Featured-Work/CS/EFCS.jpg";
 
+
+
 function FeaturedWork() {
   const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
@@ -33,50 +35,65 @@ function FeaturedWork() {
     {
       img: AudireaderWork,
       modalImg: CSAudireaderWork,
-      title: "Audireader - 01",
-      desc: "Accessible UI improving readability and overall user comfort.",
-    },
-    {
-      img: AudireaderWork2,
-      modalImg: CSAudireaderWork2,
-      title: "Audireader - 02",
-      desc: "Simplified navigation enabling faster onboarding and smoother flow.",
+      title: "AudiReader",
+      meta: "United Kingdom · EdTech · Mobile App",
+      headline: "Redefining Audiobook Learning for Kids & Parents",
+      desc: "An engaging audiobook app that blends fun for kids with parental control and personalization, creating a safe and intuitive listening experience.",
+      cta: "View Case Study",
     },
     {
       img: CareerlinkWork,
       modalImg: CSCareerlinkWork,
       title: "Career Link",
-      desc: "Platform connecting students seamlessly with career opportunities.",
+      meta: "India · EdTech · Web Platform",
+      headline: "Connecting Students Seamlessly with Career Opportunities",
+      desc: "A digital platform bridging the gap between students and recruiters, simplifying the process of exploring and applying for career paths.",
+      cta: "View Case Study",
     },
     {
       img: SportstrackerWork,
       modalImg: CSSportstrackerWork,
       title: "SportsDunia",
-      desc: "Real-time sports updates with engaging, personalized UI.",
+      meta: "India · Sports · Web Platform",
+      headline: "Real-Time Sports Updates with Personalized Engagement",
+      desc: "A sports platform delivering live updates, insights, and a personalized fan experience through intuitive UI and fast navigation.",
+      cta: "View Case Study",
     },
     {
       img: GenZKartWork,
       modalImg: CSGenZKartWork,
       title: "GenZkart",
-      desc: "Trendy e-commerce optimized for mobile-first Gen Z shoppers.",
+      meta: "India · E-Commerce · Mobile App",
+      headline: "Trendy Shopping Experience for the Gen Z Audience",
+      desc: "Mobile-first e-commerce solution optimized for Gen Z, blending style, speed, and personalized shopping journeys.",
+      cta: "View Case Study",
     },
     {
       img: DazzleBirdsWork,
       modalImg: CSDazzleBirdsWork,
       title: "Dazzlebirds",
-      desc: "Vibrant creative platform redesigned with modern or storytelling.",
+      meta: "India · Creative Platform · Web Redesign",
+      headline: "Vibrant Creative Platform with Modern Storytelling",
+      desc: "A refreshed platform design bringing creativity, collaboration, and storytelling to life through an immersive visual experience.",
+      cta: "View Case Study",
     },
     {
       img: AppinventivWork,
       modalImg: CSAppinventivWork,
       title: "Appinventiv",
-      desc: "Enterprise UX strategy showcasing impactful end-to-end product UI.",
+      meta: "India · Enterprise SaaS · UX Strategy",
+      headline: "Enterprise UX Strategy for Impactful Digital Products",
+      desc: "An engaging audiobook app that blends fun for kids with parental control and personalization, creating a safe and intuitive listening experience.",
+      cta: "View Case Study",
     },
     {
       img: EclypseWork,
       modalImg: CSEclypseWork,
       title: "Eclypse",
-      desc: "Fast, customizable interface designed for professional UX.",
+      meta: "India · SaaS · Professional Dashboard",
+      headline: "Fast & Customizable Interface for Professionals",
+      desc: "A modern dashboard solution tailored for speed, customization, and ease of use, empowering professionals to manage workflows effectively.",
+      cta: "View Case Study",
     },
   ];
 
@@ -89,40 +106,30 @@ function FeaturedWork() {
         </h2>
       </div>
 
-      <Swiper
-        className="h-[650px]"
-        modules={[Pagination, Autoplay]}
-        spaceBetween={0}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {projects.map((project, i) => (
-          <SwiperSlide key={i} className="py-4 px-2">
-            <div className="CustomSwiperBox">
-              <img
-                src={project.img}
-                alt={project.title}
-                className="w-full object-cover"
-              />
-              <h3
+      {projects.map((project, i) => (
+        <div className="CustomSwiperBox">
+          <div>
+            <img
+              src={project.img}
+              alt={project.title}
+              className="w-full object-cover"
+            />
+            <div>
+              <h3>{project.title}</h3>
+              <span>{project.meta}</span>
+              <h4>{project.headline}</h4>
+              <p>{project.desc}</p>
+              <button
                 onClick={() => {
                   setSelectedImg(project);
                   setOpen(true);
-                }}
-              >
-                <span>{project.title}</span>
-                {project.desc}
-              </h3>
+                }}>
+                {project.cta} <i className="fa fa-arrow-right ml-2"></i>
+              </button>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          </div>
+        </div>
+      ))}
 
       {/* Modal */}
       <AnimatePresence>
@@ -140,10 +147,9 @@ function FeaturedWork() {
               exit={{ y: "100%" }}
               transition={{ duration: 0.3 }}
             >
-              
-              <button
-                onClick={() => setOpen(false)}
-              ><i className="fa fa-times"></i></button>
+              <button onClick={() => setOpen(false)}>
+                <i className="fa fa-times"></i>
+              </button>
               <img
                 src={selectedImg.modalImg}
                 alt={selectedImg.title}
